@@ -13,7 +13,7 @@
 <body>
 
 
-    <div class="card">
+    <div class="card m-4">
         <div class="card-header">
           <h1>Payment for example</h1>
         </div>
@@ -72,8 +72,8 @@
                     </div>
                     <div class="col-3">  
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Example select</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <label for="exampleFormControlSelect1"><strong>State</strong></label>
+                            <select class="form-select" id="exampleFormControlSelect1">
                                 <option disabled selected hidden>Pick a state</option>
                                 <option value="">N/A</option>
 			                    <option value="AK">Alaska</option>
@@ -94,16 +94,20 @@
                 </div>
     
                 <div class="row m-3">
-                    <div class="col-6"><strong for="accept" class="d-block">We accept</strong>
-                        <div class="methods d-block bg-secondary">
-                            <label for="method">a</label>
-                            <input type="radio" name="method">
-                            <label for="method">b</label>
-                            <input type="radio" name="method">
-                            <label for="method">c</label>
-                            <input type="radio" name="method">
-                            <label for="method">d</label>
-                            <input type="radio" name="method">
+                    <div class="col-6"><strong for="accept" class="d-block mb-3">We accept:</strong>
+                        <div class="methods d-flex w-2 justify-content-around p-2 rounded bg-secondary text-white" style="width: 250px;">
+                            <div class="payment">                            
+                                <input type="radio" name="method">
+                                <label for="method"><i class="fa-brands fa-cc-mastercard"></i></label></div>
+                            <div class="payment">                            
+                                <input type="radio" name="method">
+                                <label for="method"><i class="fa-brands fa-cc-visa"></i></label></div>
+                            <div class="payment">                            
+                                <input type="radio" name="method">
+                                <label for="method"><i class="fa-brands fa-cc-diners-club"></i></label></div>
+                            <div class="payment">                            
+                                <input type="radio" name="method">
+                                <label for="method"><i class="fa-brands fa-cc-amex"></i></label></div>
                         </div>
                     </div>
                     <div class="col-6 d-block"> 
@@ -113,11 +117,12 @@
                             <small id="emailHelp" class="form-text text-muted">Add any notes here.</small>
                         </div>
                     
+                    </div>
                 </div>
             </form>
 
         </div>
-        <div class="card-footer text-muted">
+        <div class="card-footer text-muted bg-white">
             <div class="d-flex flex-row-reverse">
                 <button type="button" class="btn btn-secondary m-2">Secondary</button>
                 <button type="button" class="btn btn-primary m-2">Primary</button>
